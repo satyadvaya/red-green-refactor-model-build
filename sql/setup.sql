@@ -6,3 +6,8 @@ CREATE TABLE cars (
   model TEXT NOT NULL,
   year INT CHECK (year > 999 AND year < 10000)
 );
+
+INSERT INTO cars (make, model, year)
+VALUES ('Pontiac', 'Aztek', 2001),
+    ('Fiat', 'Yugo', 1987);
+    
